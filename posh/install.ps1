@@ -15,7 +15,6 @@ New-Item `
         ).ToString() `
     -Force
 
-
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser

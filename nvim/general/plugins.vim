@@ -1,6 +1,7 @@
+let g:polyglot_disabled = ['svelte']
+
 call plug#begin()
 Plug 'sheerun/vim-polyglot'
-Plug 'burner/vim-svelte'
 Plug 'iCyMind/NeoSolarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -11,5 +12,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Konfekt/FastFold'
 Plug 'tmhedberg/simpylfold'
 Plug 'scrooloose/syntastic'
+Plug 'leafOfTree/vim-svelte-plugin'
 call plug#end()
 

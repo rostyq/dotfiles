@@ -1,14 +1,15 @@
-filetype plugin on
 filetype plugin indent on
 set nocompatible
 syntax enable
 syntax on
 
+colorscheme NeoSolarized
+
 set title
 set encoding=utf-8
+
 set fileformat=unix
 set fileformats=unix,dos
-colorscheme NeoSolarized
 
 set showcmd
 set foldmethod=indent
@@ -24,7 +25,6 @@ autocmd FileType toml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType json setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType python setl ts=4 sts=4 sw=4 tw=80 et ai ff=unix
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType svelte setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType markdown setlocal wrap linebreak nolist

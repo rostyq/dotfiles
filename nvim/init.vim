@@ -13,6 +13,7 @@ source $VIMCONFIGDIR/general/settings.vim
 source $VIMCONFIGDIR/general/mappings.vim
 source $VIMCONFIGDIR/general/netrw.vim
 source $VIMCONFIGDIR/general/commands.vim
+
 source $VIMCONFIGDIR/plug-config/airline.vim
 source $VIMCONFIGDIR/plug-config/syntastic.vim
 source $VIMCONFIGDIR/plug-config/fastfold.vim
