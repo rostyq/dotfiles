@@ -7,6 +7,7 @@ colorscheme NeoSolarized
 
 set title
 set encoding=utf-8
+set relativenumber
 
 set fileformat=unix
 set fileformats=unix,dos
@@ -18,6 +19,7 @@ set foldlevel=99
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set ts=2 sts=2 sw=2
 
 autocmd FileType netrw setl bufhidden=delete
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
