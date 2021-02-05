@@ -13,5 +13,7 @@ Plug 'Konfekt/FastFold'
 Plug 'tmhedberg/simpylfold'
 Plug 'scrooloose/syntastic'
 Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'ActivityWatch/aw-watcher-vim'
 call plug#end()
 
