@@ -18,9 +18,3 @@ choco install `
     neovim `
     git-lfs.install `
     --yes
-
-# powershell
-& "$PSScriptRoot\posh\install.ps1"
-& "$PSScriptRoot\nvim\install.ps1"
-& "$PSScriptRoot\wt\install.ps1"
-
