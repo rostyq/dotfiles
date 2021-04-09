@@ -1,4 +1,4 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Pararussel
+Set-Theme robbyrussell
 $DefaultUser = $env:USERNAME
