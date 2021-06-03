@@ -21,6 +21,7 @@ set expandtab
 " disable netrw
 let loaded_netrwPlugin = 1
 
+let g:polyglot_disabled = ['svelte']
 
 "## plugins
 call plug#begin()
