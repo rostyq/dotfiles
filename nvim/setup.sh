@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ln -s $(dirname $(realpath $0)) $HOME/.config/nvim
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
