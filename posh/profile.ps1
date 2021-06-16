@@ -1,4 +1,5 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme robbyrussell
+
+Set-PoshPrompt -Theme pure
 $DefaultUser = $env:USERNAME
