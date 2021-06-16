@@ -41,12 +41,14 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css', 'svelte'] }
 Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'delphinus/vim-firestore'
+Plug 'ryanoasis/vim-devicons'
 Plug 'ActivityWatch/aw-watcher-vim'
 call plug#end()
 
 
 "## mappings
-nnoremap <leader>ev :edit $MYVIMRC<cr>
+nnoremap <leader>ev :vsp $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " uppercase word
@@ -85,7 +87,8 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 
 "## commands
-command! PrettifyJson %!python -m json.tool
+command! PrettifyJson %!python -m json.tool --indent 2
+command! PrettifyJS %!js-beautify -s 2 -w 100
 
 
 "## autocmd
@@ -370,7 +373,7 @@ colorscheme NeoSolarized
 
 "## neovide
 try
-  set guifont=JetBrains\ Mono:h15
+  set guifont=JetBrainsMono\ Nerd\ Font:h15
   let g:neovide_cursor_animation_length=0.05
   let g:neovide_cursor_vfx_particle_lifetime=1.0
   set termguicolors
