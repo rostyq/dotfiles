@@ -1,0 +1,97 @@
+{
+  "profiles": {
+    "defaults": {
+      "antialiasingMode": "cleartype",
+      "colorScheme": "Solarized Dark",
+      "cursorColor": "#A8A8A8",
+      "cursorShape": "filledBox",
+      "fontFace": "JetBrainsMono Nerd Font",
+      "fontSize": 11,
+      "padding": "4"
+    }
+  },
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "down"
+      },
+      "keys": "alt+shift+j"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "left"
+      },
+      "keys": "alt+shift+l"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "right"
+      },
+      "keys": "alt+shift+h"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "up"
+      },
+      "keys": "alt+shift+k"
+    },
+    {
+      "command": {
+        "action": "togglePaneZoom"
+      },
+      "keys": "alt+z"
+    }
+  ],
+  "schemes": [
+    {
+      "background": "#002B36",
+      "black": "#002B36",
+      "blue": "#839496",
+      "brightBlack": "#366A77",
+      "brightBlue": "#268BD2",
+      "brightCyan": "#2AA198",
+      "brightGreen": "#859900",
+      "brightPurple": "#D33682",
+      "brightRed": "#DC322F",
+      "brightWhite": "#EEE8D5",
+      "brightYellow": "#B58900",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#93A1A1",
+      "foreground": "#839496",
+      "green": "#586E75",
+      "name": "Solarized Dark",
+      "purple": "#6C71C4",
+      "red": "#CB4B16",
+      "selectionBackground": "#FFFFFF",
+      "white": "#FDF6E3",
+      "yellow": "#657B83"
+    }
+  ]
+}
