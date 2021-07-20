@@ -21,8 +21,6 @@ set expandtab
 " disable netrw
 let loaded_netrwPlugin = 1
 
-let g:polyglot_disabled = ['svelte']
-
 "## plugins
 call plug#begin()
 Plug 'iCyMind/NeoSolarized' " theme
@@ -39,8 +37,7 @@ Plug 'scrooloose/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css', 'svelte'] }
-Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css', 'svelte', 'markdown'] }
 Plug 'delphinus/vim-firestore'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ActivityWatch/aw-watcher-vim'
@@ -177,6 +174,10 @@ let g:airline_powerline_fonts = 1
 
 "## autopairs
 let g:AutoPairsFlyMode=0
+
+
+"## NERD commenter
+let g:NERDSpaceDelims = 1
 
 
 "## syntastic
@@ -364,8 +365,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "## svelte
 let g:vim_svelte_plugin_use_typescript=1
-let g:polyglot_disabled = ['svelte']
-
 
 "## appearence
 colorscheme NeoSolarized
@@ -373,9 +372,10 @@ colorscheme NeoSolarized
 
 "## neovide
 try
-  set guifont=JetBrainsMono\ Nerd\ Font:h15
-  let g:neovide_cursor_animation_length=0.05
-  let g:neovide_cursor_vfx_particle_lifetime=1.0
+  set guifont=JetBrainsMono\ Nerd\ Font:h12
+  let g:neovide_cursor_antialiasing=v:false
+  let g:neovide_cursor_vfx_mode = ""
+  let g:neovide_cursor_animation_length=0.02
   set termguicolors
 
   function! NeovideChangeFullscreen()
