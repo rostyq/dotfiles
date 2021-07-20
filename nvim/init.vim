@@ -21,6 +21,7 @@ set expandtab
 " disable netrw
 let loaded_netrwPlugin = 1
 
+
 "## plugins
 call plug#begin()
 Plug 'iCyMind/NeoSolarized' " theme
@@ -207,6 +208,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 let g:javascript_plugin_jsdoc = 1
 
+
 "## fastfold
 let g:fastfold_savehook = 1
 let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
@@ -224,6 +226,7 @@ let g:perl_fold_blocks = 1
 let g:r_syntax_folding = 1
 let g:rust_fold = 1
 let g:php_folding = 1
+
 
 "## coc
 " TextEdit might fail if hidden is not set.
@@ -380,8 +383,10 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+
 "## svelte
 let g:vim_svelte_plugin_use_typescript=1
+
 
 "## appearence
 colorscheme NeoSolarized
