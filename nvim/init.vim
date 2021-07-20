@@ -48,6 +48,23 @@ call plug#end()
 nnoremap <leader>ev :vsp $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" strong 'h'
+nnoremap H ^
+vnoremap H ^
+" strong 'l'
+nnoremap L $
+vnoremap L $h
+
+" try to escape hitting <esc> all the time
+inoremap jk <esc>
+inoremap <esc> <nop>
+
+" no arrows
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+
 " uppercase word
 inoremap <c-u> <esc>viwUea
 
