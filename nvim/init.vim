@@ -56,10 +56,6 @@ vnoremap H ^
 nnoremap L $
 vnoremap L $h
 
-" try to escape hitting <esc> all the time
-inoremap jk <esc>
-inoremap <esc> <nop>
-
 " no arrows
 noremap <up> <nop>
 noremap <down> <nop>
