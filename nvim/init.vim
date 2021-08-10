@@ -41,7 +41,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css', 'svelte', 'markdown'] }
 Plug 'delphinus/vim-firestore'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ActivityWatch/aw-watcher-vim'
 call plug#end()
 
 
