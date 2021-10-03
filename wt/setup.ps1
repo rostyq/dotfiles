@@ -7,7 +7,10 @@ $settings = $settingsRaw `
     -replace '"powershell.exe"','"powershell.exe -NoLogo"' `
     | ConvertFrom-Json
 
-# $settings.profiles.defaults = Get-Content -Raw -Path "$PSScriptRoot\defaults.json" | ConvertFrom-Json
 $mysettings = Get-Content -Raw -Path "$PSScriptRoot\settings.json" | ConvertFrom-Json
-$settings = $settings | Merge $mysettings
+
+$settings.profiles.defaults = $mysettings.profiles.defaults
+$settings.actions = $mysettings.actions
+$settings.schemes = $settings.schemes + $mysettings.schemes
+
 ConvertTo-Json $settings -Depth 10 | Out-File $settingsFile -Encoding "UTF8"
