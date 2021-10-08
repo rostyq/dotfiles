@@ -17,6 +17,7 @@ set foldlevel=99
 
 set tabstop=2 shiftwidth=2 shiftwidth=2
 set expandtab
+set scrolloff=10
 
 " disable netrw
 let loaded_netrwPlugin = 1
