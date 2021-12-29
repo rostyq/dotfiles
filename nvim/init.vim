@@ -390,11 +390,11 @@ colorscheme NeoSolarized
 
 "## GUI
 if exists(':GuiFont')
-  GuiFont! UbuntuMono\ NF:h13
+  GuiFont! CaskaydiaCove\ Nerd\ Font:h11
 elseif exists('g:fvim_loaded')
-  set guifont=UbuntuMono\ NF:h17
+  set guifont=CaskaydiaCove\ Nerd\ Font:h14
 elseif exists('g:neovide')
-  set guifont=UbuntuMono\ NF:h14
+  set guifont=CaskaydiaCove\ Nerd\ Font:h11
   let g:neovide_cursor_antialiasing = v:false
   let g:neovide_cursor_vfx_mode = ""
   let g:neovide_cursor_animation_length = 0.02
@@ -405,5 +405,5 @@ elseif exists('g:neovide')
   command! NeovideChangeFullscreen :call NeovideChangeFullscreen()
   noremap <F11> :NeovideChangeFullscreen()<CR>
 else
-  set guifont=UbuntuMono\ NF:h14
+  set guifont=CaskaydiaCove\ Nerd\ Font:h11
 end
