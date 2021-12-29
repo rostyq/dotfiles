@@ -14,11 +14,10 @@ try {
     choco install git.install --yes --params "/NoGuiHereIntegration /NoShellHereIntegration"
 }
 
-choco install jetbrainsmononf --yes
 choco install microsoft-build-tools --yes
 choco install cmake --yes
 choco install llvm --yes
 choco install neovim --yes
 choco install peazip --yes
 choco install nvm --yes
-choco install rust-ms --yes
+choco install rustup.install --yes
