@@ -7,6 +7,7 @@ syntax on
 set title
 set encoding=utf-8
 set relativenumber
+set termguicolors
 
 set fileformat=unix
 set fileformats=unix,dos
@@ -387,20 +388,22 @@ let g:vim_svelte_plugin_use_typescript=1
 "## appearence
 colorscheme NeoSolarized
 
-
-"## neovide
-try
-  set guifont=JetBrainsMono\ Nerd\ Font:h12
-  let g:neovide_cursor_antialiasing=v:false
+"## GUI
+if exists(':GuiFont')
+  GuiFont! UbuntuMono\ NF:h13
+elseif exists('g:fvim_loaded')
+  set guifont=UbuntuMono\ NF:h17
+elseif exists('g:neovide')
+  set guifont=UbuntuMono\ NF:h14
+  let g:neovide_cursor_antialiasing = v:false
   let g:neovide_cursor_vfx_mode = ""
-  let g:neovide_cursor_animation_length=0.02
-  set termguicolors
+  let g:neovide_cursor_animation_length = 0.02
 
   function! NeovideChangeFullscreen()
     let g:neovide_fullscreen = !g:neovide_fullscreen
   endfunction
-
   command! NeovideChangeFullscreen :call NeovideChangeFullscreen()
-
-  noremap <F11> :NeovideChangeFullscreen<CR>
-endtry
+  noremap <F11> :NeovideChangeFullscreen()<CR>
+else
+  set guifont=UbuntuMono\ NF:h14
+end
